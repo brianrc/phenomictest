@@ -3,13 +3,13 @@ backend:
   repo: brianrc/phenomictest # owner/repo
   branch: master # master
 
-public_folder: "{PHENOMIC_SOURCE}"
-media_folder: "{PHENOMIC_SOURCE}/{ASSETS_FOLDER}"
+public_folder: "content"
+media_folder: "content/assets"
 
 collections:
   - name: "post"
     label: "Post"
-    folder: "{PHENOMIC_SOURCE}/posts"
+    folder: "content/posts"
     create: true
     card: {type: "alltype", text: "title"}
     fields:
