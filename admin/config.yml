@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: {YOUR_GIT_REPO} # owner/repo
-  branch: {YOUR_BRANCH} # master
+  repo: brianrc/phenomictest # owner/repo
+  branch: master # master
 
 public_folder: "{PHENOMIC_SOURCE}"
 media_folder: "{PHENOMIC_SOURCE}/{ASSETS_FOLDER}"
