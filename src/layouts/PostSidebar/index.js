@@ -1,9 +1,10 @@
 import React, { PropTypes } from "react"
 
-import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
 
 import styles from "./index.css"
+import Button from "../../components/Button"
+import { Link } from "phenomic"
 
 const Post = (props) => {
   // it's up to you to choose what to do with this layout ;)
@@ -25,7 +26,9 @@ const Post = (props) => {
         </div>
       }
     >
-    <button light="false">Press me</button>
+      <Link to="https://google.com">
+        <Button>Press me</Button>
+      </Link>
     </Page>
   )
 }
