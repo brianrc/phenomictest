@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: {YOUR_GIT_REPO} # owner/repo
+  branch: {YOUR_BRANCH} # master
+
+public_folder: "{PHENOMIC_SOURCE}"
+media_folder: "{PHENOMIC_SOURCE}/{ASSETS_FOLDER}"
+
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "{PHENOMIC_SOURCE}/posts"
+    create: true
+    card: {type: "alltype", text: "title"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta:
+      - {label: "Publish Date", name: "date", widget: "datetime"}

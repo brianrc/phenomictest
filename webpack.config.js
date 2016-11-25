@@ -7,6 +7,7 @@ import PhenomicLoaderFeedWebpackPlugin
   from "phenomic/lib/loader-feed-webpack-plugin"
 
 import pkg from "./package.json"
+import CopyWebpackPlugin from "copy-webpack-plugin"
 
 export default (config = {}) => {
 
@@ -273,6 +274,10 @@ export default (config = {}) => {
           { compress: { warnings: false } }
         ),
       ],
+
+      new CopyWebpackPlugin([
+      {from: 'admin', to: 'admin'},
+      ]),
     ],
 
     output: {
