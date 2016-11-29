@@ -12,6 +12,7 @@ collections:
     folder: "content/posts"
     create: true
     card: {type: "alltype", text: "title"}
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
